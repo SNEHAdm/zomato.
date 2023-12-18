@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+   <style>
+    body {
+        align-items: center;
+        justify-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: large;
+        padding: 0;
+        margin: 0;
+        height: 100vh;
+        display: flex;
+    }
+    .login-container {
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 20px;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+        width: 350px;
+        text-align: center;
+    }
+    .login-container h2{
+        font-family: Arial, sans-serif;
+        margin-top: 20px;
+    }
+    .login-container input{
+        border-width: 1.5px;
+        height: 25px;
+    }
+    .login-container button{
+        height: 40px;
+        width: 250px;   
+       
+        color: #ffffff;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .login-container nav{
+      text-align: right;
+    }
+    .login-container button:hover{
+        background-color: #c0392b;
+    }
+</style>
+</head>
+<body>          
+    <div class="login-container">
+    <nav><a href="index.html" style="text-decoration: none;">x</a></nav>
+    <table align="center" border="0" cellpadding="10">
+        <form action="#" method="post">
+        <tr>
+            <td align="top">
+               <h2>Zomato Login</h2>
+            </td>
+        </tr>
+        <td>
+            <label for="Phone">Phone : </label>&nbsp;
+            <select id="country" name="country" style="height: 25px;" required>
+                <option value="India">IND</option>
+                <option value="USA">USA</option>   
+            </select>
+            <input type="tel" id="Phone" name="Phone" pattern="\+91[0-9]{10}" placeholder="Enter your phone number" required>  
+        </td>
+        <tr>
+        <td align="center">
+          <button type="submit" style=" background-color: #ff4500;">Send One Time Password</button>
+        </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <font size="3">
+                    Or
+                </font>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <button type="submit" style="color: black;">✉️ Continue with email</button>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <button type="submit" style="color: black;">G Continue with google</button>
+            </td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                <font size="2">New to zomato? <a href="">Create account</a></font></td>
+        </tr>
+    </form>
+
+    </table>
+</div>
+</body>
+</html>
